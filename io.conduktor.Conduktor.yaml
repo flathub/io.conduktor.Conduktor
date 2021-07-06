@@ -2,7 +2,7 @@ app-id: io.conduktor.Conduktor
 runtime: org.freedesktop.Platform
 runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
-command: /app/bin/conduktor.sh
+command: /app/bin/conduktor
 
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -52,28 +52,17 @@ modules:
       - type: file
         path: io.conduktor.Conduktor.metainfo.xml
 
-  # Download conduktor using an extra-data script
+  # Download conduktor directly
   - name: conduktor
     buildsystem: simple
     build-commands:
-      - install -Dm0755 conduktor.sh /app/bin/conduktor.sh
-      - install -Dm0755 apply_extra /app/bin/apply_extra
+      - mv ./bin /app/
+      - mv ./lib /app/
     sources:
-      - type: extra-data
-        filename: conduktor.zip
-        only-arches:
-          - x86_64
+      - type: archive
+        dest-filename: linux-zip.zip
+        url: https://releases.conduktor.io/linux-zip
         sha256: cd62dd885ec364557b8e3881ce46d9596d2d9fcc35a9755bafbc7094a125e6c7
         size: 190756096
-        url: https://releases.conduktor.io/linux-zip
-      - type: script
-        dest-filename: apply_extra
-        commands:
-          - unzip -qq ./conduktor.zip
-          - rm -rf ./conduktor.zip
-          - mv ./conduktor-* ./conduktor
-      - type: script
-        dest-filename: conduktor.sh
-        commands:
-          - /app/extra/conduktor/bin/conduktor
+
 
