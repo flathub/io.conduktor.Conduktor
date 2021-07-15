@@ -24,16 +24,16 @@ finish-args:
   # Developer tool, thus we can be more generous
   - --filesystem=home
   - --socket=ssh-auth
-  
+
   # Java paths
   - --env=PATH=/app/clients/bin:/app/jre/bin:/usr/bin
   - --env=JAVA_HOME=/app/jre
-  
+
 modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - "/usr/lib/sdk/openjdk11/install.sh"
+      - /usr/lib/sdk/openjdk11/install.sh
 
   - name: metadata
     buildsystem: simple
@@ -63,8 +63,8 @@ modules:
         filename: conduktor.zip
         only-arches:
           - x86_64
-        sha256: cd62dd885ec364557b8e3881ce46d9596d2d9fcc35a9755bafbc7094a125e6c7
-        size: 190756096
+        sha256: d2279ef5bbda067eb721a5e118b071b4136548cf46d8a49980bbeed1427f2be6
+        size: 190808278
         url: https://releases.conduktor.io/linux-zip
       - type: script
         dest-filename: apply_extra
