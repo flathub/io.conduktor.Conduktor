@@ -31,12 +31,12 @@
 
     <screenshots>
         <screenshot type="default">
-            <image>https://www.conduktor.io/uploads/screenshot-topics.png</image>
+            <image>https://images.ctfassets.net/lm7q36eaz111/8hZRy4Xobxv4Z3ECxt3OX/49e03c77f1a8186d16e15de215d2c3b3/screenshot-topics.png</image>
             <caption>Topics</caption>
         </screenshot>
         <screenshot>
-            <image>https://www.conduktor.io/uploads/screenshot-brokers.png</image>
-            <caption>Brokers</caption>
+            <image>https://images.ctfassets.net/lm7q36eaz111/5FxNDrJdbvnwulyMhH96DC/6603aefa035b8fcceafc37e65fcb1e8f/screenshot-header.png</image>
+            <caption>Headers</caption>
         </screenshot>
     </screenshots>
 
