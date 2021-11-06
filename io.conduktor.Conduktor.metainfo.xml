@@ -31,17 +31,29 @@
 
     <screenshots>
         <screenshot type="default">
-            <image>https://images.ctfassets.net/lm7q36eaz111/8hZRy4Xobxv4Z3ECxt3OX/49e03c77f1a8186d16e15de215d2c3b3/screenshot-topics.png</image>
-            <caption>Topics</caption>
+            <image>https://raw.githubusercontent.com/flathub/io.conduktor.Conduktor/master/images/screenshot-header.png</image>
+            <caption>Header</caption>
         </screenshot>
         <screenshot>
-            <image>https://images.ctfassets.net/lm7q36eaz111/5FxNDrJdbvnwulyMhH96DC/6603aefa035b8fcceafc37e65fcb1e8f/screenshot-header.png</image>
-            <caption>Headers</caption>
+            <image>https://raw.githubusercontent.com/flathub/io.conduktor.Conduktor/master/images/screenshot-brokers.png</image>
+            <caption>Brokers</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/io.conduktor.Conduktor/master/images/screenshot-consumer.png</image>
+            <caption>Consumer</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/io.conduktor.Conduktor/master/images/screenshot-schema-registry-2.png</image>
+            <caption>Schema Registry</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/io.conduktor.Conduktor/master/images/screenshot-topics.png</image>
+            <caption>Topics</caption>
         </screenshot>
     </screenshots>
 
     <releases>
-        <release version="2.16.0" date="2021-06-30"/>
+        <release version="2.18.6" date="2021-11-05"/>
     </releases>
 
     <content_rating type="oars-1.1"/>
