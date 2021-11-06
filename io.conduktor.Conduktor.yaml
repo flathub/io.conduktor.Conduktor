@@ -42,11 +42,14 @@ modules:
       - install -Dm644 io.conduktor.Conduktor.metainfo.xml /app/share/metainfo/io.conduktor.Conduktor.metainfo.xml
       - install -Dm644 io.conduktor.Conduktor.128.png /app/share/icons/hicolor/128x128/apps/io.conduktor.Conduktor.png
       - install -Dm644 io.conduktor.Conduktor.256.png /app/share/icons/hicolor/256x256/apps/io.conduktor.Conduktor.png
+      - install -Dm644 io.conduktor.Conduktor.512.png /app/share/icons/hicolor/512x512/apps/io.conduktor.Conduktor.png
     sources:
       - type: file
         path: io.conduktor.Conduktor.128.png
       - type: file
         path: io.conduktor.Conduktor.256.png
+      - type: file
+        path: io.conduktor.Conduktor.512.png
       - type: file
         path: io.conduktor.Conduktor.desktop
       - type: file
