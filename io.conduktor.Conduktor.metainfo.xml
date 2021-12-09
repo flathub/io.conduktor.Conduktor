@@ -17,76 +17,76 @@
     <description>
         <p>
             Conduktor gathers all necessary information and metrics about your clusters into a single application, that makes it easy to use, understand, and act upon.
-            <ul>
-                <li>Easy to install: in a few seconds, connect Conduktor to your clusters without hassle</li>
-                <li>A beautiful UI and UX to help developers and ops quickly find what they need</li>
-                <li>Light and Dark themes because as developers, we know how important it is to save our eyes</li>
-                <li>Personalizable interface (panels, columns)</li>
-            </ul>
         </p>
+        <ul>
+            <li>Easy to install: in a few seconds, connect Conduktor to your clusters without hassle</li>
+            <li>A beautiful UI and UX to help developers and ops quickly find what they need</li>
+            <li>Light and Dark themes because as developers, we know how important it is to save our eyes</li>
+            <li>Personalizable interface (panels, columns)</li>
+        </ul>
 
         <p>
             You can work with multiple clusters, connect Conduktor to any clusters and to all the different technologies gravitating around Apache Kafka.
-            <ul>
-                <li>Compatible with all Apache Kafka and its extensions (Schema Registry, Kafka Connect, Kafka Streams, ksqlDB)</li>
-                <li>Works with on-premise Kafka clusters, Confluent Cloud, AWS MSK, Aiven, etc.</li>
-                <li>Works with any Kafka security: SASL, SSL, Kerberos, everything is supported.</li>
-                <li>Multi-clusters management. Switch between multiple clusters easily. Distinguish them with colors to not make mistakes in Production!</li>
-            </ul>
         </p>
+        <ul>
+            <li>Compatible with all Apache Kafka and its extensions (Schema Registry, Kafka Connect, Kafka Streams, ksqlDB)</li>
+            <li>Works with on-premise Kafka clusters, Confluent Cloud, AWS MSK, Aiven, etc.</li>
+            <li>Works with any Kafka security: SASL, SSL, Kerberos, everything is supported.</li>
+            <li>Multi-clusters management. Switch between multiple clusters easily. Distinguish them with colors to not make mistakes in Production!</li>
+        </ul>
 
         <p>
             Spot problems early, understand root causes fast, and take action on them immediately. Our goal is to provide users with insights into their data flows.
-            <ul>
-                <li>Instant aware of failures (Kafka, Topics, Connectors, Streams…)</li>
-                <li>Activity of the topics, are they used or not? (throughput)</li>
-                <li>Plug your monitoring system into Conduktor to get more specialized insights.</li>
-            </ul>
         </p>
+        <ul>
+            <li>Instant aware of failures (Kafka, Topics, Connectors, Streams…)</li>
+            <li>Activity of the topics, are they used or not? (throughput)</li>
+            <li>Plug your monitoring system into Conduktor to get more specialized insights.</li>
+        </ul>
 
         <p>
             Conduktor provides many features for quick data analysis in a specialized beautiful UI. Quickly verify if there are any defects in your streaming process and if your application produce correct data. It takes 5sec to configure our Consumer and get your answers.
-            <ul>
-                <li>Consume from the past or in real-time. Use more advanced strategies like from specific offsets, or from an existing consumer group to see where your application crashed</li>
-                <li>Filter the messages by key, value, or header values, or size. Use simple expressions or more complex ones like regular expressions</li>
-                <li>Project your JSON or Avro data into simplified payload for quick insights</li>
-                <li>Export your results to CSV or JSON for further processing</li>
-            </ul>
         </p>
+        <ul>
+            <li>Consume from the past or in real-time. Use more advanced strategies like from specific offsets, or from an existing consumer group to see where your application crashed</li>
+            <li>Filter the messages by key, value, or header values, or size. Use simple expressions or more complex ones like regular expressions</li>
+            <li>Project your JSON or Avro data into simplified payload for quick insights</li>
+            <li>Export your results to CSV or JSON for further processing</li>
+        </ul>
 
         <p>
             It’s common to work with many formats inside Apache Kafka: CSV, JSON, the Schema Registry, the popular Apache Avro from the Big Data ecosystem, Protobuf, Google’s language-neutral data interchange format… We’re keep adding more formats, but everything you need should be already here!
-            <ul>
-                <li>Format Auto-detection</li>
-                <li>All basics: strings, numbers, CSV, bytes</li>
-                <li>Apache Avro, widely used. Using the Schema Registry or not.</li>
-                <li>Google Protobuf: a rising star in the ecosystem</li>
-                <li>JSON Schema</li>
-            </ul>
         </p>
+        <ul>
+            <li>Format Auto-detection</li>
+            <li>All basics: strings, numbers, CSV, bytes</li>
+            <li>Apache Avro, widely used. Using the Schema Registry or not.</li>
+            <li>Google Protobuf: a rising star in the ecosystem</li>
+            <li>JSON Schema</li>
+        </ul>
 
         <p>
             For Developers and QA Engineers, we provide ways to send data into your topics to test your applications and see how your system reacts and scales.
-            <ul>
-                <li>Perfect to send custom payload</li>
-                <li>Save your different messages as template inside Conduktor, to replay them anytime</li>
-                <li>Build scenarios, send different messages into different topics and see how your applications reacts</li>
-                <li>Replay messages from DLQ topics</li>
-                <li>Send random data following your data schemas to test your services resiliency</li>
-                <li>Use our Flow feature to continuously send data into topics to test your performances</li>
-                <li>Import CSV directly into a topic</li>
-            </ul>
         </p>
+        <ul>
+            <li>Perfect to send custom payload</li>
+            <li>Save your different messages as template inside Conduktor, to replay them anytime</li>
+            <li>Build scenarios, send different messages into different topics and see how your applications reacts</li>
+            <li>Replay messages from DLQ topics</li>
+            <li>Send random data following your data schemas to test your services resiliency</li>
+            <li>Use our Flow feature to continuously send data into topics to test your performances</li>
+            <li>Import CSV directly into a topic</li>
+        </ul>
 
         <p>
             We have a complete integration for Kafka Connect, which is an extension of Apache Kafka to reliably stream data between Apache Kafka and other data systems. We make it simple to quickly define connectors that move large data sets into and out of Kafka.
-            <ul>
-                <li>Create and Update through a powerful wizard, no mistake possible</li>
-                <li>Monitor the state of your integrations, restart on error</li>
-                <li>Reset the state of your Kafka Connect to start fresh, without complexity</li>
-                <li>We support all connectors: Debezium, JDBC, MySQL, PostgreSQL, Elasticsearch, etc. and transformations</li>
-            </ul>
         </p>
+        <ul>
+            <li>Create and Update through a powerful wizard, no mistake possible</li>
+            <li>Monitor the state of your integrations, restart on error</li>
+            <li>Reset the state of your Kafka Connect to start fresh, without complexity</li>
+            <li>We support all connectors: Debezium, JDBC, MySQL, PostgreSQL, Elasticsearch, etc. and transformations</li>
+        </ul>
 
         <p>
           NOTE: This wrapper is not verified by, affiliated with, or supported by Conduktor LLC
