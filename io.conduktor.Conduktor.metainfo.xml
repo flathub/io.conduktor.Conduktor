@@ -87,10 +87,6 @@
             <li>Reset the state of your Kafka Connect to start fresh, without complexity</li>
             <li>We support all connectors: Debezium, JDBC, MySQL, PostgreSQL, Elasticsearch, etc. and transformations</li>
         </ul>
-
-        <p>
-          NOTE: This wrapper is not verified by, affiliated with, or supported by Conduktor LLC
-        </p>
     </description>
 
     <screenshots>
@@ -117,7 +113,7 @@
     </screenshots>
 
     <releases>
-        <release version="2.18.6" date="2021-11-05" />
+        <release version="2.20.3" date="2022-01-20" />
     </releases>
 
     <content_rating type="oars-1.1" />
