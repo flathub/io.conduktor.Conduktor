@@ -9,11 +9,10 @@ sdk-extensions:
 
 finish-args:
   - --share=network
-  - --socket=wayland
   - --socket=pulseaudio
 
-  # Legacy X11 support
-  - --socket=fallback-x11
+  # Legacy X11 support, JavaFX has problems with Wayland
+  - --socket=x11
   - --share=ipc
   - --device=dri
 
