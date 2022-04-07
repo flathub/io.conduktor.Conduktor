@@ -65,8 +65,8 @@ modules:
         filename: conduktor.zip
         only-arches:
           - x86_64
-        sha256: 13f6ac364a477c734b3030455fe904b902e49f0ab3619cc5bd73b56ab892b6d1
-        size: 245120477
+        sha256: ba716e066edbf39981ddf9d872e2fe2c6ed2607a8a2351d4b85969b2ad57ad19
+        size: 245235942
         url: https://releases.conduktor.io/linux-zip
       - type: script
         dest-filename: apply_extra
