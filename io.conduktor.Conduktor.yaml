@@ -41,12 +41,15 @@ modules:
     build-commands:
       - mv ./bin /app
       - mv ./lib /app
-      - ls -la /app/bin
     sources:
       - type: archive
         dest-filename: conduktor.zip
         sha256: c686bcb7324275baa0a3940b2c3d4c1b33330a5cd83ff77d569b6252b4bf730b
         url: https://releases.conduktor.io/linux-zip
+        x-checker-data:
+          type: rotating-url
+          url: https://releases.conduktor.io/linux-zip
+          pattern: ([0-9.]+).zip
       - type: script
         dest-filename: conduktor.sh
         commands:
