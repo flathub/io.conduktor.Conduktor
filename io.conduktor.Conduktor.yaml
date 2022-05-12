@@ -2,7 +2,7 @@ app-id: io.conduktor.Conduktor
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
-command: /app/bin/conduktor.sh
+command: /app/bin/conduktor
 
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -33,6 +33,23 @@ modules:
     buildsystem: simple
     build-commands:
       - /usr/lib/sdk/openjdk11/install.sh
+  
+  # Upstream has given their improval for direct distribution
+  # https://github.com/flathub/io.conduktor.Conduktor/issues/59
+  - name: conduktor
+    buildsystem: simple
+    build-commands:
+      - mv ./bin /app
+      - mv ./lib /app
+    sources:
+      - type: archive
+        dest-filename: conduktor.zip
+        sha256: c686bcb7324275baa0a3940b2c3d4c1b33330a5cd83ff77d569b6252b4bf730b
+        url: https://releases.conduktor.io/linux-zip
+        x-checker-data:
+          type: rotating-url
+          url: https://releases.conduktor.io/linux-zip
+          pattern: ([0-9.]+).zip
 
   - name: metadata
     buildsystem: simple
@@ -53,29 +70,4 @@ modules:
         path: io.conduktor.Conduktor.desktop
       - type: file
         path: io.conduktor.Conduktor.metainfo.xml
-
-  # Download conduktor using an extra-data script
-  - name: conduktor
-    buildsystem: simple
-    build-commands:
-      - install -Dm0755 conduktor.sh /app/bin/conduktor.sh
-      - install -Dm0755 apply_extra /app/bin/apply_extra
-    sources:
-      - type: extra-data
-        filename: conduktor.zip
-        only-arches:
-          - x86_64
-        sha256: c686bcb7324275baa0a3940b2c3d4c1b33330a5cd83ff77d569b6252b4bf730b
-        size: 246502618
-        url: https://releases.conduktor.io/linux-zip
-      - type: script
-        dest-filename: apply_extra
-        commands:
-          - unzip -qq ./conduktor.zip
-          - rm -rf ./conduktor.zip
-          - mv ./conduktor-* ./conduktor
-      - type: script
-        dest-filename: conduktor.sh
-        commands:
-          - /app/extra/conduktor/bin/conduktor
 
