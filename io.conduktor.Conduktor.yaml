@@ -2,7 +2,7 @@ app-id: io.conduktor.Conduktor
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
-command: /app/bin/conduktor.sh
+command: /app/bin/conduktor
 
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -50,10 +50,6 @@ modules:
           type: rotating-url
           url: https://releases.conduktor.io/linux-zip
           pattern: ([0-9.]+).zip
-      - type: script
-        dest-filename: conduktor.sh
-        commands:
-          - /app/bin/conduktor
 
   - name: metadata
     buildsystem: simple
