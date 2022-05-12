@@ -49,7 +49,7 @@ modules:
         x-checker-data:
           type: html
           url: https://www.conduktor.io/download/
-          version pattern: Download Conduktor ([0-9.]+)
+          version-pattern: <span class="badge">([0-9.]+)</span>
           url-template: https://releases.conduktor.io/linux-zip?placeholder=$version
 
   - name: metadata
