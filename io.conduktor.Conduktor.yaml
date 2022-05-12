@@ -45,11 +45,12 @@ modules:
       - type: archive
         dest-filename: conduktor.zip
         sha256: c686bcb7324275baa0a3940b2c3d4c1b33330a5cd83ff77d569b6252b4bf730b
-        url: https://releases.conduktor.io/linux-zip
+        url: https://releases.conduktor.io/linux-zip?placeholder=2.21.7
         x-checker-data:
-          type: rotating-url
-          url: https://releases.conduktor.io/linux-zip
-          pattern: ([0-9.]+).zip
+          type: html
+          url: https://www.conduktor.io/download/
+          version pattern: Download Conduktor ([0-9.]+)
+          url-template: https://releases.conduktor.io/linux-zip?placeholder=$version
 
   - name: metadata
     buildsystem: simple
