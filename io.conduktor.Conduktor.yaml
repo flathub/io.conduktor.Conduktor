@@ -33,7 +33,7 @@ modules:
     buildsystem: simple
     build-commands:
       - /usr/lib/sdk/openjdk11/install.sh
-  
+
   # Upstream has given their improval for direct distribution
   # https://github.com/flathub/io.conduktor.Conduktor/issues/59
   - name: conduktor
@@ -45,7 +45,7 @@ modules:
       - type: archive
         dest-filename: conduktor.zip
         sha256: c686bcb7324275baa0a3940b2c3d4c1b33330a5cd83ff77d569b6252b4bf730b
-        url: https://releases.conduktor.io/linux-zip
+        url: https://objects.githubusercontent.com/github-production-release-asset-2e65be/235892776/11b72d84-da84-40f0-b0d2-0ce9591cf776?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220512%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220512T164758Z&X-Amz-Expires=300&X-Amz-Signature=5ede917e75ba4ac1b5f2f6006143af730e9beaa2fbba0f7f6449eaaa83dc1a0a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=235892776&response-content-disposition=attachment%3B+filename%3DConduktor-linux-2.21.7.zip&response-content-type=application%2Foctet-stream
         x-checker-data:
           type: rotating-url
           url: https://releases.conduktor.io/linux-zip
