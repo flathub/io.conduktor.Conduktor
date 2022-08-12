@@ -44,8 +44,8 @@ modules:
     sources:
       - type: archive
         dest-filename: conduktor.zip
-        sha256: 5ac78fcadc96e1e46dcfa001947c64145b269388f5fdb2a9a563e6b608e04686
-        url: https://releases.conduktor.io/linux-zip?placeholder=2.23.0
+        sha256: 4a2d622200716954b951ea2b4ade426b20d1b19875b1f3100c9743f47bf90407
+        url: https://releases.conduktor.io/linux-zip?placeholder=2.23.1
         x-checker-data:
           type: html
           url: https://www.conduktor.io/download/
