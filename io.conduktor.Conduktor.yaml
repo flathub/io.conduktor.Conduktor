@@ -48,8 +48,8 @@ modules:
         url: https://releases.conduktor.io/linux-zip?placeholder=2.23.2
         x-checker-data:
           type: html
-          url: https://www.conduktor.io/download/
-          version-pattern: <span class="badge">([0-9.]+)</span>
+          url: https://cdn.conduktor.io/releases/latest
+          version-pattern: ([0-9.]+)
           url-template: https://releases.conduktor.io/linux-zip?placeholder=$version
 
   - name: metadata
