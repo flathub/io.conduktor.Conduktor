@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Conduktor
 Comment=A beautiful and fully-featured desktop client for Apache Kafka
+Categories=Development;
 Exec=/app/bin/conduktor
 Icon=io.conduktor.Conduktor
 Terminal=false
