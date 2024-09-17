@@ -32,7 +32,7 @@ modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk11/install.sh
+      - /usr/lib/sdk/openjdk21/install.sh
 
   # Upstream has given their improval for direct distribution
   # https://github.com/flathub/io.conduktor.Conduktor/issues/59
