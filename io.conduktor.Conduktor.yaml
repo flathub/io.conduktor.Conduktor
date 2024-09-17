@@ -4,8 +4,10 @@ runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: conduktor
 
+# Official documentation sticks with OpenJDK 17
+# https://docs.conduktor.io/desktop/changelog/
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk21
+  - org.freedesktop.Sdk.Extension.openjdk17
 
 finish-args:
   - --share=network
@@ -32,7 +34,7 @@ modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk21/install.sh
+      - /usr/lib/sdk/openjdk17/install.sh
 
   # Upstream has given their improval for direct distribution
   # https://github.com/flathub/io.conduktor.Conduktor/issues/59
