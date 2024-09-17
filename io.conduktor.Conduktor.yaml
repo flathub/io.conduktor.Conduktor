@@ -2,7 +2,7 @@ app-id: io.conduktor.Conduktor
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: /app/bin/conduktor
+command: conduktor
 
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk17
@@ -25,7 +25,7 @@ finish-args:
   - --socket=ssh-auth
 
   # Java paths
-  - --env=PATH=/app/clients/bin:/app/jre/bin:/usr/bin
+  - --env=PATH=/app/jre/bin:/usr/bin:/app/bin
   - --env=JAVA_HOME=/app/jre
 
 modules:
