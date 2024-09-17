@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 command: conduktor
 
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk17
+  - org.freedesktop.Sdk.Extension.openjdk21
 
 finish-args:
   - --share=network
