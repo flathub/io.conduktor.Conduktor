@@ -1,9 +1,11 @@
 app-id: io.conduktor.Conduktor
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: /app/bin/conduktor
+command: conduktor
 
+# Official documentation sticks with OpenJDK 17
+# https://docs.conduktor.io/desktop/changelog/
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk17
 
@@ -25,14 +27,14 @@ finish-args:
   - --socket=ssh-auth
 
   # Java paths
-  - --env=PATH=/app/clients/bin:/app/jre/bin:/usr/bin
+  - --env=PATH=/app/jre/bin:/usr/bin:/app/bin
   - --env=JAVA_HOME=/app/jre
 
 modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk11/install.sh
+      - /usr/lib/sdk/openjdk17/install.sh
 
   # Upstream has given their improval for direct distribution
   # https://github.com/flathub/io.conduktor.Conduktor/issues/59
